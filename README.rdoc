@@ -1,32 +1,32 @@
 = ImageResize
 
-* http://github.com/#{github_username}/#{project_name}
+* http://github.com/shokai/ImageResize-ruby
 
 == DESCRIPTION:
 
-FIX (describe your package)
-
-== FEATURES/PROBLEMS:
-
-* FIX (list of features or problems)
+simple image resize library without external program.
 
 == SYNOPSIS:
 
-  FIX (code sample of usage)
+    require 'rubygems'
+    require 'ImageResize'
+    
+    Image.resize('big.jpg', 'small.jpg', 40, 40)
+
 
 == REQUIREMENTS:
 
-* FIX (list of requirements)
+* Java (1.5 or higher)
 
 == INSTALL:
 
-* FIX (sudo gem install, anything else)
+* gem install ImageResize
 
 == LICENSE:
 
 (The MIT License)
 
-Copyright (c) 2010 FIXME full name
+Copyright (c) 2010 Sho Hashimoto
 
 Permission is hereby granted, free of charge, to any person obtaining
 a copy of this software and associated documentation files (the
