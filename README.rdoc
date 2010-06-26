@@ -11,8 +11,8 @@ simple image resize library without external program.
     require 'rubygems'
     require 'ImageResize'
     
+    # input_image_filename, output_image_filename, max_width, max_height
     Image.resize('big.jpg', 'small.jpg', 40, 40)
-
 
 == REQUIREMENTS:
 
