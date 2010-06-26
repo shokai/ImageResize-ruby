@@ -4,6 +4,9 @@ PostInstall.txt
 README.rdoc
 Rakefile
 lib/ImageResize.rb
+lib/ImageResize/Image.rb
+samples/resize.rb
+samples/shokai-big.jpg
 script/console
 script/destroy
 script/generate
@@ -11,3 +14,6 @@ spec/ImageResize_spec.rb
 spec/spec.opts
 spec/spec_helper.rb
 tasks/rspec.rake
+java/ImageResize.jar
+java/ImageResize.class
+java/Manifest
