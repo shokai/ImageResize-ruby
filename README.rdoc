@@ -16,7 +16,7 @@ simple image resize library without external program.
 
 == REQUIREMENTS:
 
-* Java (1.5 or higher)
+* Java 1.5 or higher
 
 == INSTALL:
 
