@@ -3,6 +3,7 @@ import java.io.*;
 import java.awt.image.*;
 import java.awt.geom.*;
 import java.awt.image.*;
+import java.util.regex.*;
 
 class ImageResize{
 
@@ -44,13 +45,15 @@ class ImageResize{
 	
 	BufferedImage img_resized = new BufferedImage(width, height, img.getType());
 	AffineTransformOp ato = new AffineTransformOp(AffineTransform.getScaleInstance((double)width / img.getWidth(), 
-										       (double) height / img.getHeight()), 
+										       (double)height / img.getHeight()), 
 						      null);
 	ato.filter(img, img_resized);
 	
+
+	String format = Pattern.compile("^.+\\.(.+)$").matcher(fname_out).replaceAll("$1");
 	boolean result = false;
 	try {
-	    result = ImageIO.write(img_resized, "jpeg", new File(fname_out));
+	    result = ImageIO.write(img_resized, format, new File(fname_out));
 	}
 	catch (Exception e) {
 	    e.printStackTrace();
