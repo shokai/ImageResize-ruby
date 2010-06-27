@@ -1,5 +1,5 @@
 === 0.0.2 2010-06-27
-* works no cygwin
+* fix jarfile path
 
 === 0.0.1 2010-06-26
 
