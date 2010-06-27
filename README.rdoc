@@ -4,7 +4,7 @@
 
 == DESCRIPTION:
 
-simple image resize library without external program.
+Simple image resize library without external program.
 
 == SYNOPSIS:
 
