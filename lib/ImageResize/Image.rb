@@ -1,4 +1,6 @@
 module Image
+
+  $VERBOSE = nil
   
   def Image.cmd
     jar_path = File.expand_path(File.dirname(__FILE__)).split(/\//)

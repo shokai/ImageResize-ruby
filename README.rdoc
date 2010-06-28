@@ -14,6 +14,11 @@ Simple image resize library without external program.
     # input_image_filename, output_image_filename, max_width, max_height
     Image.resize('big.jpg', 'small.jpg', 40, 40)
 
+    # show formats
+    p Image.formats
+    p Image.read_formats
+    p Image.write_formats
+
 == REQUIREMENTS:
 
 * Java 1.5 or higher

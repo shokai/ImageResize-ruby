@@ -1,3 +1,6 @@
+=== 0.0.4 2010-06-28
+* show Image formats
+
 === 0.0.3 2010-06-28
 * get image format from filename
 
