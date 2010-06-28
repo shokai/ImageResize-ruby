@@ -11,13 +11,20 @@ class ImageResize{
     }
 
     public static void main(String args[]){
-	if(args.length < 4){
-	    System.out.println("ImageResize in.jpg out.jpg 320 320");
+	if(!(( args.length == 5 && args[0].equals("resize") ) ||
+	     ( args.length == 1 && args[0].equals("formats") ))){
+	    System.out.println("ImageResize resize in.jpg out.jpg 320 320");
+	    System.out.println("ImageResize formats");
 	    System.exit(1);
 	}
 	ImageResize app = new ImageResize();
-	if(app.resize(args[0], args[1], Integer.parseInt(args[2]), Integer.parseInt(args[3]))){
-	    System.out.println(args[1]);
+	if(args[0].equals("resize")){
+	    if(app.resize(args[1], args[2], Integer.parseInt(args[3]), Integer.parseInt(args[4]))){
+		System.out.println(args[2]);
+	    }
+	    else{
+		System.out.println("error!");
+	    }
 	}
     }
 
