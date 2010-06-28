@@ -26,6 +26,21 @@ class ImageResize{
 		System.out.println("error!");
 	    }
 	}
+	else if(args[0].equals("formats")){
+	    app.showFormats();
+	}
+    }
+
+    public void showFormats(){
+	System.out.println("--read formats--");
+	for(String name : ImageIO.getReaderFormatNames()){
+	    System.out.println(name);
+	}
+	
+	System.out.println("--write formats--");
+	for(String name : ImageIO.getWriterFormatNames()){
+	    System.out.println(name);
+	}
     }
 
     public boolean resize(String fname_in, String fname_out, int max_width, int max_height){
