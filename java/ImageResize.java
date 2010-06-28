@@ -32,14 +32,16 @@ class ImageResize{
     }
 
     public void showFormats(){
-	System.out.println("--read formats--");
+	System.out.print("read:");
 	for(String name : ImageIO.getReaderFormatNames()){
-	    System.out.println(name);
+	    System.out.print(name+",");
 	}
+
+	System.out.println("");
 	
-	System.out.println("--write formats--");
+	System.out.print("write:");
 	for(String name : ImageIO.getWriterFormatNames()){
-	    System.out.println(name);
+	    System.out.print(name+",");
 	}
     }
 
