@@ -11,7 +11,7 @@ module Image
   end
   
   def Image.resize(img_in, img_out, width, height)
-    puts `#{Image.cmd} resize #{img_in} #{img_out} #{width} #{height}`
+    puts `#{Image.cmd} resize "#{img_in}" "#{img_out}" #{width} #{height}`
   end
 
   def Image.formats
